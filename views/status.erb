@@ -1,0 +1,15 @@
+<h1>"<%= @@name %>"</h1>
+<h3>Your Tamagotchi has <%= @food_level %> food level.</h3>
+<h3>Your Tamagotchi has <%= @sleep_level %> sleep level.</h3>
+<h3>Your Tamagotchi has <%= @activity_level %> activity level.</h3>
+<h3>Your Tamagotchi has been alive for <%= @@life_time %> seconds.</h3>
+
+<form action="/feed" method ="post">
+<button name="feed" type="submit" value="feed">Feed your Tamagotchi!</button>
+</form>
+<form action="/play" method ="post">
+<button name="play" type="submit" value="play">Play with your Tamagotchi</button>
+</form>
+<form action="/to_bed" method ="post">
+<button name="to_bed" type="submit" value="to_bed">Put your Tamagotchi to bed!</button>
+</form>
